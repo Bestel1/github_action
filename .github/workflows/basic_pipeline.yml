@@ -11,3 +11,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      # Step 3: Terraform Init
+      - name: Terraform Init
+        run: terraform init
