@@ -1,0 +1,13 @@
+name: Terraform Manual Plan (Self Hosted)
+
+on:
+  workflow_dispatch:   # 👈 Manual trigger only
+
+jobs:
+  terraform:
+    name: Terraform Init and Plan
+    runs-on: self-hosted   # 👈 Self-hosted runner
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
