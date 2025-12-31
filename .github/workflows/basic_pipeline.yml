@@ -6,7 +6,7 @@ on:
 jobs:
   terraform:
     name: Terraform Init and Plan
-    runs-on: self-hosted   # 👈 Self-hosted runner
+    runs-on: [self-hosted, label-1]   # 👈 Self-hosted runner
 
     steps:
       - name: Checkout repository
